@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="calculator">
+            <!-- <h1 class="heading">calculator</h1> -->
+            <form>
+                <div class="display">
+                    <input type="text" class="input" id="display">
+
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="rem('AC')">
+                    <input type="button" value="DE" onclick="dlt('DE')" >
+                    <input type="button" value="." onclick="getbtnValue('.')">
+                    <input type="button" value="/" onclick="getbtnValue('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="getbtnValue('7')">
+                    <input type="button" value="8" onclick="getbtnValue('8')">
+                    <input type="button" value="9" onclick="getbtnValue('9')">
+                    <input type="button" value="x" onclick="getbtnValue('*')">
+                </div>
+                <div>
+                    <input type="button" onclick="getbtnValue('4')" value="4">
+                    <input type="button" value="5" onclick="getbtnValue('5')">
+                    <input type="button" value="6" onclick="getbtnValue('6')">
+                    <input type="button" value="-" onclick="getbtnValue('-')">
+                </div>
+                <div>
+                    <input type="button"  value="1" onclick="getbtnValue('1')">
+                    <input type="button" value="2" onclick="getbtnValue('2')">
+                    <input type="button" value="3" onclick="getbtnValue('3')">
+                    <input type="button" value="+" onclick="getbtnValue('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="getbtnValue('00')">
+                    <input type="button" value="0" onclick="getbtnValue('0')">
+                    <input type="button" style="width: 145px;" value="=" onclick="calculate('=')" class="equal">
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
